@@ -9,16 +9,16 @@ class Program
 
         if (args.Length > 0)
         {
-            message = String.Join(" ", args);
+            message = string.Join(" ", args);
         }
 
-        Console.WriteLine(GetBot(message));
-        Console.WriteLine();
+        WriteLine(GetBot(message));
+        WriteLine();
         WriteLine("**Environment**");
         WriteLine($".NET Framework version: {(Environment.Version.Major == 4 ? "4.6.2" : "3.5") } ");
         WriteLine($"OS: {Environment.OSVersion}");
 #if DEBUG
-            Console.ReadLine();
+        ReadLine();
 #endif
     }
 
