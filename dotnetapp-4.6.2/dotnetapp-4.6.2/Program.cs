@@ -1,39 +1,31 @@
 ﻿using System;
-using System.Runtime.InteropServices;
+using static System.Console;
 
-namespace MyDotNet35App
+class Program
 {
-    class Program
+    static void Main(string[] args)
     {
-        static void Main(string[] args)
+        string message = "Dotnet-bot: Welcome to using .NET Framework!";
+
+        if (args.Length > 0)
         {
-            string message = "Dotnet-bot: Welcome to using .NET Framework!";
-
-            if (args.Length > 0)
-            {
-                message = String.Join(" ", args);
-            }
-
-            Console.WriteLine(GetBot(message));
-            Console.WriteLine();
-            Console.WriteLine("**Environment**");
-
-            if (Environment.Version.ToString().Equals("2.0.50727.8745"))
-            {
-                Console.WriteLine($".NET Framework Version: 3.5");
-            }
-            else if (Environment.Version.ToString().Equals("4.0.30319.42000"))
-            {
-                Console.WriteLine($".NET Framework Version: 4.6.2");
-            }
-            Console.WriteLine($"CLR Version: " + Environment.Version);
-            Console.ReadLine();
+            message = String.Join(" ", args);
         }
 
-        public static string GetBot(string message)
-        {
-            string bot = $"\n        {message}";
-            bot += @"
+        Console.WriteLine(GetBot(message));
+        Console.WriteLine();
+        WriteLine("**Environment**");
+        WriteLine($".NET Framework version: {(Environment.Version.Major == 4 ? "4.6.2" : "3.5") } ");
+        WriteLine($"OS: {Environment.OSVersion}");
+#if DEBUG
+            Console.ReadLine();
+#endif
+    }
+
+    public static string GetBot(string message)
+    {
+        string bot = $"\n        {message}";
+        bot += @"
     __________________
                       \
                        \
@@ -73,7 +65,6 @@ namespace MyDotNet35App
         .....
 
 ";
-            return bot;
-        }
+        return bot;
     }
 }

@@ -13,7 +13,7 @@ Since the .NET Framework only runs on Windows you must have Docker set to use Wi
 **Preparing your Environment**
 
 1. Git clone this repository or otherwise copy this sample to your machine: `git clone https://github.com/dotnet/dotnet-framework-docker-samples/dotnetapp-3.5`
-2. Navigate to this sample on your machine at the command prompt or terminal.
+2. Navigate to this sample on your machine at the command prompt or terminal. Make sure terminal is open to the same folder that contains the Dockerfile.
 
 **Build and run Docker image**
 
