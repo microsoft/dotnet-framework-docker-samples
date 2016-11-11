@@ -1,6 +1,6 @@
 # Supported tags and respective `Dockerfile` links
 
--       [`dotnetapp-4.6.2`, `4.6.2`, `latest` (*dotnetapp-4.6.2/dotnetapp-4.6.2/Dockerfile*)](https://github.com/microsoft/dotnet-framework-docker-samples/blob/dockerhub/dotnetapp-4.6.2./dotnetapp-4.6.2./Dockerfile)
+-       [`dotnetapp-4.6.2`, `4.6.2`, `latest` (*dotnetapp-4.6.2/dotnetapp-4.6.2/Dockerfile*)](https://github.com/microsoft/dotnet-framework-docker-samples/blob/dockerhub/dotnetapp-4.6.2/dotnetapp-4.6.2/Dockerfile)
 -       [`dotnetapp-3.5`, `3.5` (*dotnetapp-3.5/dotnetapp-3.5/Dockerfile*)](https://github.com/microsoft/dotnet-framework-docker-samples/blob/dockerhub/dotnetapp-3.5/dotnetapp-3.5/Dockerfile)
 
 For more information about these images and their history, please see [the relevant Dockerfile (`microsoft/dotnet-framework-docker-samples`)](https://github.com/microsoft/dotnet-framework-docker-samples/search?utf8=%E2%9C%93&q=FROM&type=Code). These images are updated via [pull requests to the `microsoft/dotnet-framework-docker` GitHub repo](https://github.com/microsoft/dotnet-framework-docker/pulls?utf8=%E2%9C%93&q=).
@@ -40,13 +40,13 @@ docker run microsoft/dotnet-framework-samples
 
 ## Image variants
 
-The `microsoft/dotnet-franework-samples` images come in multiple flavors.
+The `microsoft/dotnet-framework-samples` images come in multiple flavors.
 
-### `microsoft/dotnet-samples:4.6.2`
+### `microsoft/dotnet-framework-samples:4.6.2`
 
 This image demonstrates the minimal use of the [.NET Framework 4.6.2 image](https://hub.docker.com/r/microsoft/dotnet). It is not intended to be used as the base of another image, but purely used for demonstration purposes.
 
-### `microsoft/dotnet-samples:3.5`
+### `microsoft/dotnet-framework-samples:3.5`
 
 This image demonstrates the minimal use of the [.NET Framework 3.5 image](https://hub.docker.com/r/microsoft/dotnet). It is not intended to be used as the base of another image, but purely used for demonstration purposes.
 
