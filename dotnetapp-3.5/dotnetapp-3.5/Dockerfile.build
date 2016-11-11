@@ -5,9 +5,8 @@ ENV MSBUILD_DOWNLOAD_URL https://download.microsoft.com/download/E/E/D/EEDF18A8-
 RUN powershell -NoProfile -Command \ 
          $ErrorActionPreference = 'Stop'; \ 
          Invoke-WebRequest %MSBUILD_DOWNLOAD_URL% -OutFile BuildTools_Full.exe; \ 
-         & BuildTools_Full.exe /Silent /Full ;\
-         Remove-Item -Force BuildTools_Full.exe
-       
+         & BuildTools_Full.exe /Silent /Full
+                
 RUN setx /M PATH "%PATH%;%ProgramFiles(x86)%\MSBUILD\14.0\bin"
 
 WORKDIR /app
