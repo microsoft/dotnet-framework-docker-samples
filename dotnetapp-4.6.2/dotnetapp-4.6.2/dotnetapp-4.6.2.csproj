@@ -7,8 +7,8 @@
     <ProjectGuid>{CDD30738-A6C7-4B6E-BD8D-EFECA803270E}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>MyDotNet46App</RootNamespace>
-    <AssemblyName>MyDotNet46App</AssemblyName>
+    <RootNamespace>dotnetapp-4.6.2</RootNamespace>
+    <AssemblyName>dotnetapp-4.6.2</AssemblyName>
     <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
