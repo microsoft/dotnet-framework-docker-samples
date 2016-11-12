@@ -7,7 +7,7 @@ Docker uses [docker/whalesay](https://hub.docker.com/r/docker/whalesay/) as a ge
 
 You can pick the sample that best fits the scenario you are interested in. The instructions for each sample describe how to target [Windows](http://aka.ms/windowscontainers).
 
-[Fill more details here] You need to have the [Docker for Windows client](https://docs.docker.com/docker-for-windows/) client installed to use these samples.
+You need to have the [Docker for Windows client](https://docs.docker.com/docker-for-windows/) client installed to use these samples.
 
 Samples
 -------
