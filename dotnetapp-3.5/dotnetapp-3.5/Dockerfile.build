@@ -1,12 +1,13 @@
 FROM microsoft/dotnet-framework:3.5
 
-ENV MSBUILD_DOWNLOAD_URL https://download.microsoft.com/download/E/E/D/EEDF18A8-4AED-4CE0-BEBE-70A83094FC5A/BuildTools_Full.exe 
+ENV MSBUILD_DOWNLOAD_URL https://download.microsoft.com/download/E/E/D/EEDF18A8-4AED-4CE0-BEBE-70A83094FC5A/BuildTools_Full.exe
 
-RUN powershell -NoProfile -Command \ 
-         $ErrorActionPreference = 'Stop'; \ 
-         Invoke-WebRequest %MSBUILD_DOWNLOAD_URL% -OutFile BuildTools_Full.exe; \ 
-         & BuildTools_Full.exe /Silent /Full
-                
+RUN powershell -NoProfile -Command " \
+        $ErrorActionPreference = 'Stop'; \
+        Invoke-WebRequest %MSBUILD_DOWNLOAD_URL% -OutFile BuildTools_Full.exe; \
+        ./BuildTools_Full.exe /Silent /Full /NoRestart | Out-Null; \
+        Remove-Item -Force BuildTools_Full.exe"
+
 RUN setx /M PATH "%PATH%;%ProgramFiles(x86)%\MSBUILD\14.0\bin"
 
 WORKDIR /app
