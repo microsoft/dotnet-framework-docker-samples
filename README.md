@@ -3,16 +3,19 @@
 
 This repo contains samples that demonstrate various .NET Framework Docker configurations, which you can use as the basis of your own Docker images. These samples depend on the [.NET Framework Docker images](https://hub.docker.com/r/microsoft/dotnet-framework/) on Docker Hub, provided by the .NET Team at Microsoft.
 
-Docker uses [docker/whalesay](https://hub.docker.com/r/docker/whalesay/) as a getting started sample. The .NET Core Team at Microsoft uses [dotnetbot](https://github.com/dotnet-bot), which is the mascot for .NET open source projects. Got something to say? Both whalesay and dotnetbot are great listeners.
+Docker uses [docker/whalesay](https://hub.docker.com/r/docker/whalesay/) as a getting started sample. The .NET Team at Microsoft uses [dotnetbot](https://github.com/dotnet-bot), which is the mascot for .NET open source projects. Got something to say? Both whalesay and dotnetbot are great listeners.
 
-You can pick the sample that best fits the scenario you are interested in. The instructions for each sample describe how to target [Windows](http://aka.ms/windowscontainers).
+You can pick the sample that best fits the scenario you are interested in. The instructions for each sample describe how to target [Windows Containers](http://aka.ms/windowscontainers).
 
-You need to have the [Docker for Windows client](https://docs.docker.com/docker-for-windows/) client installed to use these samples.
+Requirements
+-------
+
+You need to have the [Docker for Windows](https://docs.docker.com/docker-for-windows/) client installed to use these samples.
 
 Samples
 -------
 
-The following samples show different ways to use .NET Core images.
+The following samples show different ways to use .NET images.
 
 ### .NET Framework 4.6.2
 
