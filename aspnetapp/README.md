@@ -1,7 +1,7 @@
 ﻿aspnet-framework:4.6.2 Sample
 ====================
 
-This sample demonstrates how to dockerize an ASP.NET Web Form app that uses .NET Framework 4.6.2 by adding a `Dockerfile` to it and running the image in [Docker for Windows](https://docs.docker.com/docker-for-windows/) with a Windows Container. To complete this example you must have [Windows 10](https://www.microsoft.com/en-us/windows/get-windows-10) (or Windows Server 2016) and [Docker for Windows](https://docs.docker.com/docker-for-windows/) installed.
+This sample demonstrates how to dockerize an ASP.NET Web Form app that uses .NET Framework 4.6.2 by adding a `Dockerfile` to it and running the image in [Docker for Windows](https://docs.docker.com/docker-for-windows/) with a Windows Container. To complete this example you must have [Windows 10](https://www.microsoft.com/en-us/windows/get-windows-10) (or [Windows Server 2016](https://www.microsoft.com/en-us/cloud-platform/windows-server)), [Docker for Windows](https://docs.docker.com/docker-for-windows/), and [Git](https://git-scm.com/) installed.
 
 ## Instructions
 
@@ -16,14 +16,8 @@ This sample demonstrates how to dockerize an ASP.NET Web Form app that uses .NET
 
 > **Note:** The base image for this sample is [microsoft/iis](https://hub.docker.com/r/microsoft/iis/) which uses [microsoft/windowsservercore](https://hub.docker.com/r/microsoft/windowsservercore/) which is a minimal install of Windows Server 2016 and about 4 GB in size. Make sure you have enough space availiable on your drive.
 
-1. Build the Docker image
-```console
-docker build -t aspnetapp .
-``` 
-2. Run the application in the container: 
-```console
-docker run -d -p 80:80 aspnetapp
-``` 
+1. Build the Docker image: `docker build -t aspnetapp .`
+2. Run the application in the container: `docker run -d -p 80:80 aspnetapp`
 
 ### View your web page running from your container
 There is currently a bug that affects how [Windows 10 talks to Containers via "NAT"](https://github.com/Microsoft/Virtualization-Documentation/issues/181#issuecomment-252671828) (Network Address Translation). Today you must hit the IP of the container directly. You can get the IP address of your container with the following steps:
