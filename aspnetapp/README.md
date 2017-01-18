@@ -1,7 +1,7 @@
 ﻿aspnet-framework:4.6.2 Sample
 ====================
 
-This sample demonstrates how to dockerize an ASP.NET Web Form app that uses .NET Framework 4.6.2 by adding a `Dockerfile` to it and running the image in [Docker for Windows](https://docs.docker.com/docker-for-windows/) with a Windows Container. To complete this example you must have [Windows 10](https://www.microsoft.com/en-us/windows/get-windows-10) (or [Windows Server 2016](https://www.microsoft.com/en-us/cloud-platform/windows-server)), [Docker for Windows](https://docs.docker.com/docker-for-windows/), and [Git](https://git-scm.com/) installed.
+This sample demonstrates how to dockerize an ASP.NET Web Form app that uses .NET Framework 4.6.2 by adding a `Dockerfile` to it and running the image in [Docker for Windows](https://docs.docker.com/docker-for-windows/) with a Windows Container. To complete this example you must have [Windows 10](https://www.microsoft.com/en-us/windows/get-windows-10) (or [Windows Server 2016](https://www.microsoft.com/en-us/cloud-platform/windows-server)), [Docker for Windows](https://docs.docker.com/docker-for-windows/), [Visual Studio](https://www.visualstudio.com/vs/), and [Git](https://git-scm.com/) installed.
 
 ## Instructions
 
@@ -10,7 +10,8 @@ This sample demonstrates how to dockerize an ASP.NET Web Form app that uses .NET
 ### Preparing your Environment
 
 1. Git clone this repository or otherwise copy this sample to your machine: `git clone https://github.com/dotnet/dotnet-framework-docker-samples/aspnetapp-4.6.2`
-2. Navigate to this sample on your machine at the command prompt or terminal. Make sure terminal is open to the same folder that contains the Dockerfile.
+2. Build the project locally from [Visual Studio](https://www.visualstudio.com/vs/).
+3. Navigate to this sample on your machine at the command prompt or terminal. Make sure terminal is open to the same folder that contains the Dockerfile.
 
 ### Build and run the Docker image:
 
