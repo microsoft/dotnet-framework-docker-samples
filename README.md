@@ -27,7 +27,7 @@ The following samples show different ways to use .NET images.
 
 ### ASP.NET Web Form using .NET Framework 4.6.2
 
-- [aspnetapp](aspnetapp) - This sample demonstrates how to build a Docker image for an ASP.NET Web Form that uses .NET Framework 4.6.2.
+- [aspnetapp](aspnetapp) - This sample demonstrates how to build a Docker image for an ASP.NET Web Forms application that uses .NET Framework 4.6.2.
 
 Related Repositories
 --------------------
