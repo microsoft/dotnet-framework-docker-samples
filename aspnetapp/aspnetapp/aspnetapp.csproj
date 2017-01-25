@@ -140,7 +140,7 @@
     </Content>
     <None Include="Properties\PublishProfiles\published.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
-    <None Include="Dockerfile" />
+    <None Include="published\Dockerfile" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
@@ -231,7 +231,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="published\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
