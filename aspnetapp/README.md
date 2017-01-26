@@ -1,7 +1,7 @@
 ﻿aspnet-framework:4.6.2 Sample
 ====================
 
-This sample demonstrates how to dockerize an ASP.NET Web Form app that uses .NET Framework 4.6.2 by adding a `Dockerfile` to it and running the image in [Docker for Windows](https://docs.docker.com/docker-for-windows/) with a Windows Container. To complete this example you must have [Windows 10 Anniversary Edition](https://www.microsoft.com/en-us/windows/get-windows-10) (or [Windows Server 2016](https://www.microsoft.com/en-us/cloud-platform/windows-server)) with [container support enabled](https://docs.microsoft.com/en-us/virtualization/windowscontainers/quick-start/quick-start-windows-10), [Docker for Windows](https://docs.docker.com/docker-for-windows/) (the minimum beta version 1.13), [Visual Studio](https://www.visualstudio.com/vs/), and [Git](https://git-scm.com/) installed.
+This sample demonstrates how to dockerize an ASP.NET Web Forms app that uses .NET Framework 4.6.2 by adding a `Dockerfile` to it and running the image with [Docker for Windows](https://docs.docker.com/docker-for-windows/) in a Windows Container. To complete this example you must have [Windows 10 Anniversary Edition](https://www.microsoft.com/en-us/windows/get-windows-10) (or [Windows Server 2016](https://www.microsoft.com/en-us/cloud-platform/windows-server)) with [container support enabled](https://docs.microsoft.com/en-us/virtualization/windowscontainers/quick-start/quick-start-windows-10), [Docker for Windows](https://docs.docker.com/docker-for-windows/) (the minimum beta version 1.13), [Visual Studio](https://www.visualstudio.com/vs/), and [Git](https://git-scm.com/) installed.
 
 ## Instructions
 
