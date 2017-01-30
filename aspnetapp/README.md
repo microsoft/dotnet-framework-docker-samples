@@ -12,13 +12,12 @@ This sample demonstrates how to dockerize an ASP.NET Web Forms app that uses .NE
 1. Git clone this repository or otherwise copy this sample to your machine: `git clone https://github.com/microsoft/dotnet-framework-docker-samples/aspnetapp`
 2. Build the project locally from [Visual Studio](https://www.visualstudio.com/vs/).
    > **Note:** These instructions are command-line-based for simplicity, but you can also run this sample with [Docker Tools for Visual Studio 2017 RC](https://blogs.msdn.microsoft.com/webdev/2016/11/16/new-docker-tools-for-visual-studio/).
-3. Publish the project to your local File System and set the output to the `published` folder at the root of the project. This folder is will be the Docker build context and contains the Dockerfile.
 
 ### Build and run the Docker image:
 
 > **Note:** The base image for this sample is [microsoft/iis](https://hub.docker.com/r/microsoft/iis/) which uses [microsoft/windowsservercore](https://hub.docker.com/r/microsoft/windowsservercore/) which is a minimal install of Windows Server 2016 and about 4 GB in size. Make sure you have enough space availiable on your drive.
 
-1. Navigate to the `published` folder at the command prompt or terminal.
+1. Navigate to the root of your project folder that contains your Dockerfile at the command prompt or terminal.
 2. Build the Docker image: `docker build -t aspnetapp .`
 3. Run the application in the container: `docker run -d -p 80:80 aspnetapp`
 
