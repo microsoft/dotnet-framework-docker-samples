@@ -1,0 +1,17 @@
+*
+!bin
+!Content
+!fonts
+!Scripts
+!About.aspx
+!ApplicationInsights.config
+!Bundle.config
+!Contact.aspx
+!Default.aspx
+!favicon.ico
+!Global.asax
+!packages.config
+!Site.Master
+!Site.Mobile.Master
+!ViewSwitcher.ascx
+!Web.config
