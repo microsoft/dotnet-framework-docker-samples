@@ -1,7 +1,7 @@
 dotnet-framework:4.6.2 Sample
 ====================
 
-The dotnet-framework:4.6.2 sample demonstrates basic "hello world" usage of the .NET Framework 4.6.2. It shows you how you can build and deploy the app relying on the .NET Framework 4.6.2.
+The dotnet-framework:4.6.2 sample demonstrates basic "hello world" usage of the .NET Framework 4.6.2. It shows you how you can build and deploy the app relying on the .NET Framework 4.6.2 docker image.
 
 Script
 ------
@@ -19,6 +19,6 @@ Follow these steps to try out this sample. To complete this sample you must have
 **Build and run Docker image**
 
 1. Build the Docker image
-   `docker build -t my-dotnet46-app .`
+   `docker build -t my-dotnet462-app .`
 2. Run the application in the container: 
-    `docker run my-dotnet46-app`
+    `docker run my-dotnet462-app`
