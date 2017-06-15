@@ -1,2 +1,4 @@
-﻿FROM microsoft/aspnet:4.6.2
-COPY . /inetpub/wwwroot
+FROM microsoft/aspnet:4.7
+WORKDIR /inetpub/wwwroot
+COPY . .
+COPY ./bin ./bin

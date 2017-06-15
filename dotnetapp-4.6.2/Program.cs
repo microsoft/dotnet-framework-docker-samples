@@ -15,11 +15,8 @@ class Program
         WriteLine(GetBot(message));
         WriteLine();
         WriteLine("**Environment**");
-        WriteLine($".NET Framework version: {(Environment.Version.Major == 4 ? "4.6.2" : "3.5") } ");
-        WriteLine($"OS: {Environment.OSVersion}");
-#if DEBUG
-        ReadLine();
-#endif
+        WriteLine($".NET Framework 4.6.2");
+        WriteLine($"{Environment.OSVersion}");
     }
 
     public static string GetBot(string message)

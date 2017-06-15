@@ -17,13 +17,18 @@ Samples
 
 The following samples show different ways to use .NET images.
 
+### .NET Framework 4.7
+
+- [dotnetapp-4.7](dotnetapp-4.7) - This sample demonstrates how to build a Docker image for a .NET Framework 4.7 application. It can also be used with applications built for earlier .NET 4.x versions of the .NET Framework.
+
+
 ### .NET Framework 4.6.2
 
-- [dotnetapp-4.6.2](dotnetapp-4.6.2) - This sample demonstrates how to build a Docker image for a .NET Framework 4.6.2 application.
+- [dotnetapp-4.6.2](dotnetapp-4.6.2) - This sample demonstrates how to build a Docker image for a .NET Framework 4.6.2 application. It can also be used with applications built for earlier .NET 4.x versions of the .NET Framework.
 
 ### .NET Framework 3.5
 
-- [dotnetapp-3.5](dotnetapp-3.5) - This sample demonstrates how to build a Docker image for a .NET Framework 3.5 application.
+- [dotnetapp-3.5](dotnetapp-3.5) - This sample demonstrates how to build a Docker image for a .NET Framework 3.5 application. It can also be used with applications built for earlier versions of the .NET Framework.
 
 ### ASP.NET Web Forms using .NET Framework 4.6.2
 
@@ -43,4 +48,3 @@ See the following related Docker Hub repos:
 See the following related  GitHub repos:
 
 - [dotnet/dotnet-docker-samples](https://github.com/dotnet/dotnet-docker-samples/) for .NET Core samples.
-
