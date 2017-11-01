@@ -20,11 +20,11 @@ namespace WcfServiceConsoleApp
                     Console.WriteLine("The service is ready at {0}", uri);
                 }
 
-                // Leave the servicing running
+                // Leave the service running
                 Console.WriteLine("The service is running...");
                 Thread.Sleep(-1);
             }
-            finally
+            catch
             {
                 host?.Close();
                 Console.WriteLine("The service is closed");

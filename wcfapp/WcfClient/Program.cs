@@ -20,8 +20,7 @@ namespace WcfClient
 
         static void CallViaHttp()
         {
-            var uri = string.Format("http://{0}/Service1.svc", host);
-            var address = new EndpointAddress(uri);
+            var address = string.Format("http://{0}/Service1.svc", host);
             var binding = new BasicHttpBinding();
             var factory = new ChannelFactory<IService1>(binding, address);
             var channel = factory.CreateChannel();
@@ -31,8 +30,7 @@ namespace WcfClient
 
         static void CallViaNetTcp()
         {
-            var uri = string.Format("net.tcp://{0}/Service1.svc", host);
-            var address = new EndpointAddress(uri);
+            var address = string.Format("net.tcp://{0}/Service1.svc", host);
             var binding = new NetTcpBinding(SecurityMode.None);
             var factory = new ChannelFactory<IService1>(binding, address);
             var channel = factory.CreateChannel();
