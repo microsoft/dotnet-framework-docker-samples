@@ -14,7 +14,7 @@ WCF service is supported on .NET Framework, which can run in Windows Server Core
 ### Build a Container with IIS-hosted WCF Service
 Project `WcfServiceWebApp` is created from 'WCF Service Application' template in Visual Studio. A [Dockerfile](WcfServiceWebApp/Dockerfile) is added to the project. We use `microsoft/wcf` image as the base image, which has both HTTP and NET.TCP protocols enabled in IIS and exposes ports 80 (for HTTP) and 808 (for NET.TCP) for the container. We use WCF image with tag `4.6.2` for .NET Framework 4.6.2 in this example, but you can change it to use other tags (eg. `microsoft/wcf:4.7` with tag `4.7`) for WCF images with different versions of .NET Framework. The complete list of [WCF image tags](https://hub.docker.com/r/microsoft/wcf/tags/) can be found from Docker Hub. 
 
-Run commands below to build the container image with name `wcfservice:iis-hosted` and start an instance of it named `myservice1`. Docker parameter `-d` will run the container in backgroud (detached mode).
+Run commands below to build the container image with name `wcfservice:iis-hosted` and start an instance of it named `myservice1`. Docker parameter `-d` will run the container in background (detached mode).
 ```
 C:\wcfapp\WcfServiceWebApp>docker build -t wcfservice:iis-hosted .
 C:\wcfapp\WcfServiceWebApp>docker run -d --name myservice1 wcfservice:iis-hosted
@@ -56,4 +56,4 @@ The result above is from running the WCF client against the IIS-hosted WCF servi
 ```
 C:\wcfapp\WcfServiceConsoleApp>docker run -d -p 80:80 -p 808:808 --name myservice3 wcfservice:self-hosted
 ```
-Then for the WCF client to connect to the service, we need to set the `host` to be the IP address (or DNS name) of the container host machine (instead of the IP address of the contianer instance). The rest will be the same to start the WCF client.
+Then for the WCF client to connect to the service, we need to set the `host` to be the IP address (or DNS name) of the container host machine (instead of the IP address of the container instance). The rest will be the same to start the WCF client.
