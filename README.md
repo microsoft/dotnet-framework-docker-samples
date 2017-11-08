@@ -34,6 +34,9 @@ The following samples show different ways to use .NET images.
 
 - [aspnetapp](aspnetapp) - This sample demonstrates how to build a Docker image for an ASP.NET Web Forms application that uses .NET Framework 4.6.2.
 
+### WCF Service
+- [wcfapp](wcfapp) - This folder contains samples that demonstrate how to build and run Docker images for WCF services, either IIS-hosted or self-hosted.
+
 Related Repositories
 --------------------
 
@@ -41,6 +44,7 @@ See the following related Docker Hub repos:
 
 - [microsoft/dotnet-framework](https://hub.docker.com/r/microsoft/dotnet-framework/) for .NET Framework images (for web applications, see microsoft/aspnet).
 - [microsoft/aspnet](https://hub.docker.com/r/microsoft/aspnet/) for ASP.NET Web Forms and MVC images.
+- [microsoft/wcf](https://hub.docker.com/r/microsoft/wcf/) for WCF images.
 - [microsoft/dotnet](https://hub.docker.com/r/microsoft/dotnet/) for .NET Core images.
 - [microsoft/dotnet-samples](https://hub.docker.com/r/microsoft/dotnet-samples/) for .NET Core sample images.
 - [microsoft/aspnetcore](https://hub.docker.com/r/microsoft/aspnetcore/) for ASP.NET Core images.
