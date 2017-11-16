@@ -14,13 +14,18 @@ Samples
 
 The following samples show different ways to use .NET Framework images.
 
-### .NET Framework 4.6.2
 
-- [dotnetapp-4.6.2](dotnetapp-4.6.2) - This sample demonstrates how to build a Docker image for a .NET Framework 4.6.2 application.
+# Supported Windows Server 2016 Version 1709 (Fall Creators Update) amd64 tags
 
-### .NET Framework 3.5
+- [`4.7.1-windowsservercore-1709` (*dotnetapp-4.7.1/dotnetapp-4.7.1/Dockerfile-windowsservercore-1709*)](https://github.com/Microsoft/dotnet-framework-docker-samples/blob/dockerhub/dotnetapp-4.7.1/dotnetapp-4.7.1/Dockerfile-windowsservercore-1709)
+- [`3.5-windowsservercore-1709`(*dotnetapp-3.5/dotnetapp-3.5/Dockerfile-windowsservercore-1709*)](https://github.com/Microsoft/dotnet-framework-docker-samples/blob/dockerhub/dotnetapp-3.5/dotnetapp-3.5/Dockerfile-windowsservercore-1709)
 
-- [dotnetapp-3.5](dotnetapp-3.5) - This sample demonstrates how to build a Docker image for a .NET Framework 3.5 application.
+# Supported Windows Server 2016 amd64 tags
+
+- [`4.7.1-windowsservercore-ltsc2016`, `4.7.1`, `latest` (*dotnetapp-4.7.1/dotnetapp-4.7.1/Dockerfile-windowsservercore-ltsc2016*)](https://github.com/Microsoft/dotnet-framework-docker-samples/blob/dockerhub/dotnetapp-4.7.1/dotnetapp-4.7.1/Dockerfile-windowsservercore-ltsc2016)
+- [`4.7-windowsservercore-ltsc2016`, `4.7` (*dotnetapp-4.7/dotnetapp-4.7/Dockerfile-windowsservercore-ltsc2016*)](https://github.com/Microsoft/dotnet-framework-docker-samples/blob/dockerhub/dotnetapp-4.7/dotnetapp-4.7/Dockerfile-windowsservercore-ltsc2016)
+- [`4.6.2-windowsservercore-ltsc2016`, `4.6.2` (*dotnetapp-4.6.2/dotnetapp-4.6.2/Dockerfile-windowsservercore-ltsc2016*)](https://github.com/Microsoft/dotnet-framework-docker-samples/blob/dockerhub/dotnetapp-4.7.1/dotnetapp-4.7.1/Dockerfile-windowsservercore-ltsc2016)
+- [`3.5-windowsservercore-ltsc2016`, `3.5` (*dotnetapp-3.5/dotnetapp-3.5/Dockerfile-windowsservercore-ltsc2016*)](https://github.com/Microsoft/dotnet-framework-docker-samples/blob/dockerhub/dotnetapp-3.5/dotnetapp-3.5/Dockerfile-windowsservercore-ltsc2016)
 
 Related Repositories
 --------------------
