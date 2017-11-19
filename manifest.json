@@ -1,0 +1,72 @@
+{
+  "repos": [
+    {
+      "name": "microsoft/dotnet-framework-samples",
+      "readmePath": "README.DockerHub.md",
+      "images": [
+        {
+          "sharedTags": {
+          },
+          "platforms": [
+            {
+              "dockerfile": "dotnetapp-3.5/Dockerfile",
+              "os": "windows",
+              "osVersion": "10.0.14393",
+              "tags": {
+                "dotnetapp-3.5-windowsservercore-ltsc2016": {},
+                "3.5":{}
+              }
+            },
+            {
+              "dockerfile": "dotnetapp-4.6.2/Dockerfile",
+              "os": "windows",
+              "osVersion": "10.0.14393",
+              "tags": {
+                "dotnetapp-4.6.2-windowsservercore-ltsc2016": {},
+                "4.6.2":{},
+              }
+            },
+            {
+              "dockerfile": "dotnetapp-4.7/Dockerfile",
+              "os": "windows",
+              "osVersion": "10.0.14393",
+              "tags": {
+                "dotnetapp-4.7-windowsservercore-ltsc2016": {},
+                "4.7":{}
+              }
+            },
+            {
+              "dockerfile": "dotnetapp-4.7.1/Dockerfile",
+              "os": "windows",
+              "osVersion": "10.0.14393",
+              "tags": {
+                "dotnetapp-4.7.1-windowsservercore-ltsc2016": {},
+                "4.7.1":{},
+                "latest":{}
+              }
+            },
+            {
+              "dockerfile": "dotnetapp-3.5/Dockerfile",
+              "os": "windows",
+              "osVersion": "10.0.16299",
+              "tags": {
+                "dotnetapp-3.5-windowsservercore-1709": {},
+                "3.5":{}
+              }
+            },
+            {
+              "dockerfile": "dotnetapp-4.7.1/Dockerfile",
+              "os": "windows",
+              "osVersion": "10.0.16299",
+              "tags": {
+                "dotnetapp-4.7.1-windowsservercore-1709": {},
+                "4.7.1":{},
+                "latest":{}
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

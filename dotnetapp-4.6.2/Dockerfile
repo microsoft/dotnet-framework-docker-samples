@@ -1,4 +1,4 @@
-FROM microsoft/dotnet-framework:4.6.2
+FROM microsoft/dotnet-framework:4.6.2 as builder
 
 ENV MSBUILD_DOWNLOAD_URL https://download.microsoft.com/download/E/E/D/EEDF18A8-4AED-4CE0-BEBE-70A83094FC5A/BuildTools_Full.exe
 
@@ -15,3 +15,12 @@ WORKDIR /app
 COPY . ./
 
 RUN ["msbuild.exe", "dotnetapp-4.6.2.csproj", "/p:Configuration=Release"]
+
+
+FROM microsoft/dotnet-framework:4.6.2
+
+WORKDIR /app
+
+COPY --from=builder /app/bin/Release .
+
+ENTRYPOINT ["dotnetapp-4.6.2.exe"]
