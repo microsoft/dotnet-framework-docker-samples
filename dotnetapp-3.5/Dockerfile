@@ -10,17 +10,11 @@ RUN powershell -NoProfile -Command " \
         Remove-Item -Force BuildTools_Full.exe"
 
 RUN setx /M PATH "%PATH%;%ProgramFiles(x86)%\MSBUILD\14.0\bin"
-
 WORKDIR /app
 COPY . ./
-
 RUN ["msbuild.exe", "dotnetapp-3.5.csproj", "/p:Configuration=Release"]
 
-
 FROM microsoft/dotnet-framework:3.5
-
 WORKDIR /app
-
 COPY --from=builder /app/bin/Release .
-
 ENTRYPOINT ["dotnetapp-3.5.exe"]
