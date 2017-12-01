@@ -29,36 +29,6 @@
         },
         {
           "sharedTags": {
-            "4.6.2":{}
-          },
-          "platforms": [
-            {
-              "dockerfile": "dotnetapp-4.6.2/Dockerfile",
-              "os": "windows",
-              "osVersion": "10.0.14393",
-              "tags": {
-                "dotnetapp-4.6.2-windowsservercore-ltsc2016": {}
-              }
-            }
-          ]
-        },
-        {
-          "sharedTags": {
-            "4.7":{}
-          },
-          "platforms": [
-            {
-              "dockerfile": "dotnetapp-4.7/Dockerfile",
-              "os": "windows",
-              "osVersion": "10.0.14393",
-              "tags": {
-                "dotnetapp-4.7-windowsservercore-ltsc2016": {}
-              }
-            }
-          ]
-        },
-        {
-          "sharedTags": {
             "4.7.1":{},
             "latest":{}
           },

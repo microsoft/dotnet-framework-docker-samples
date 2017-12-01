@@ -23,8 +23,6 @@ The following samples show different ways to use .NET Framework images.
 # Supported Windows Server 2016 amd64 tags
 
 - [`4.7.1-windowsservercore-ltsc2016`, `4.7.1`, `latest` (*dotnetapp-4.7.1/Dockerfile*)](https://github.com/Microsoft/dotnet-framework-docker-samples/blob/dockerhub/dotnetapp-4.7.1/Dockerfile)
-- [`4.7-windowsservercore-ltsc2016`, `4.7` (*dotnetapp-4.7/Dockerfile*)](https://github.com/Microsoft/dotnet-framework-docker-samples/blob/dockerhub/dotnetapp-4.7/Dockerfile)
-- [`4.6.2-windowsservercore-ltsc2016`, `4.6.2` (*dotnetapp-4.6.2/Dockerfile*)](https://github.com/Microsoft/dotnet-framework-docker-samples/blob/dockerhub/dotnetapp-4.7.1/Dockerfile)
 - [`3.5-windowsservercore-ltsc2016`, `3.5` (*dotnetapp-3.5/Dockerfile*)](https://github.com/Microsoft/dotnet-framework-docker-samples/blob/dockerhub/dotnetapp-3.5/Dockerfile)
 
 >**Note:** .NET Core multi-arch tags, such as 2.0-runtime, have been updated to use nanoserver-1709 images if your host is Windows Server 1709 or higher or Windows 10 Fall Creators Update (Version 1709) or higher. You need Docker 17.10 or later to take advantage of these updated tags.
