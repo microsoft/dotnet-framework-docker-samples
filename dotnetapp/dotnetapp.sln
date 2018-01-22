@@ -2,7 +2,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26510.0
 MinimumVisualStudioVersion = 15.0.26124.0
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "dotnetapp-4.7", "dotnetapp-4.7.csproj", "{259F2C52-7DEC-4614-B0C5-78E9EB133020}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "dotnetapp", "dotnetapp.csproj", "{259F2C52-7DEC-4614-B0C5-78E9EB133020}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

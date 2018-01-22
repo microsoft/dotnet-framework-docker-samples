@@ -15,7 +15,7 @@ class Program
         WriteLine(GetBot(message));
         WriteLine();
         WriteLine("**Environment**");
-        WriteLine($".NET Framework 4.7");
+        WriteLine($".NET Framework 4.7.1");
         WriteLine($"{Environment.OSVersion}");
     }
 
