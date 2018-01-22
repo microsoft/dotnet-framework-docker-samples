@@ -2,7 +2,7 @@
 
 This .NET Framework Docker sample demonstrates a best practice pattern for building Docker images for .NET Framework apps. It shows you how you can build and run the app using Docker. 
 
-The [sample Dockerfile](Dockerfile) creates a .NET Framework application Docker image based off of the [.NET Framework Runtime Docker base image](https://hub.docker.com/r/microsoft/dotnet-framework/). A nearly identical sample is also available for [.NET Framework 3.5](../dotnetapp-3.5/README.md).
+The [sample Dockerfile](Dockerfile) creates a .NET Framework 4.7.1 application Docker image based off of the [.NET Framework Runtime Docker base image](https://hub.docker.com/r/microsoft/dotnet-framework/). A nearly identical sample is available for [.NET Framework 3.5](../dotnetapp-3.5/README.md).
 
 It uses the [Docker multi-stage build](https://github.com/dotnet/announcements/issues/18) feature to build the sample in a container based on the larger [.NET Framework build base image](https://hub.docker.com/r/microsoft/dotnet-framework-build/) and then copies the final build result into a Docker image based on the smaller [.NET Framework runtime base image](https://hub.docker.com/r/microsoft/dotnet-framework/). The build image contains tools that are required to build applications while the runtime image does not.
 
@@ -32,7 +32,7 @@ Note: The instructions above work on multiple versions of Windows. The .NET Fram
 
 ## Build and run the sample locally with MSBuild
 
-You can build and run the sample locally with MSBuild using the following instructions. The instructions assume that you have [Visual Studio 2017](https://www.visualstudio.com/) installed, that you are using the `Developer Command Prompt for VS 2017` and  that you are in the root of the repository.
+You can build and run the sample locally with MSBuild using the following instructions. The instructions assume that you have [Visual Studio 2017](https://www.visualstudio.com/) installed, that you are using the `Developer Command Prompt for VS 2017`, and  that you are in the root of the repository.
 
 ```console
 cd dotnetapp

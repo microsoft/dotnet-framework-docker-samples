@@ -7,8 +7,8 @@
     <ProjectGuid>{E00527DF-512D-47B6-B341-C090F0D01DA7}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>MyDotNet35App</RootNamespace>
-    <AssemblyName>MyDotNet35App</AssemblyName>
+    <RootNamespace>dotnetapp</RootNamespace>
+    <AssemblyName>dotnetapp</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>

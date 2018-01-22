@@ -1,25 +1,60 @@
-dotnet-framework:3.5 Sample
-====================
+# .NET Framework 3.5 Console Sample
 
-The dotnet-framework:3.5 sample demonstrates basic "hello world" usage of .NET Framework 3.5. It shows you how you can build and deploy a project relying on .NET Framework 3.5 in Docker.
+This .NET Framework Docker sample demonstrates a best practice pattern for building Docker images for .NET Framework apps. It shows you how you can build and run the app using Docker. 
 
-Script
-------
+The [sample Dockerfile](Dockerfile) creates a .NET Framework 3.5 application Docker image based off of the [.NET Framework Runtime Docker base image](https://hub.docker.com/r/microsoft/dotnet-framework/). A nearly identical sample is available for [.NET Framework 4.7.1](../dotnetapp/README.md).
 
-Follow these steps to try out this sample. To complete this sample you must have [Windows 10](https://www.microsoft.com/en-us/windows/get-windows-10) (or [Windows Server 2016](https://www.microsoft.com/en-us/cloud-platform/windows-server)), [Docker for Windows](https://docs.docker.com/docker-for-windows/), [Visual Studio](https://www.visualstudio.com/vs/), and [Git](https://git-scm.com/) installed.
+It uses the [Docker multi-stage build](https://github.com/dotnet/announcements/issues/18) feature to build the sample in a container based on the larger [.NET Framework build base image](https://hub.docker.com/r/microsoft/dotnet-framework-build/) and then copies the final build result into a Docker image based on the smaller [.NET Framework runtime base image](https://hub.docker.com/r/microsoft/dotnet-framework/). The build image contains tools that are required to build applications while the runtime image does not.
 
-> **Note:** You must use Windows Containers on [Docker for Windows](https://docs.docker.com/docker-for-windows/) to run this image. Be sure to check that you are properly switched to Windows Containers. Do this by opening the system tray up arrow and right clicking on the Docker whale icon for a popup menu. In the popup menu make sure you select 'Switch to Windows Containers'.
+This sample requires [Docker 17.10](https://docs.docker.com/release-notes/docker-ce) or later of the [Docker client](https://www.docker.com/community-edition). You need the latest Windows 10 or Windows Server 2016 to use Windows containers. The instructions assume you have the Git client installed.
 
-**Preparing your Environment**
+## Getting the sample
 
-1. Git clone this repository or otherwise copy this sample to your machine: `git clone https://github.com/dotnet/dotnet-framework-docker-samples/dotnetapp-3.5`
-2. Build the project locally from [Visual Studio](https://www.visualstudio.com/vs/).
-3. Navigate to this sample on your machine at the command prompt or terminal. Make sure terminal is open to the same folder that contains the Dockerfile.
+The easiest way to get the sample is by cloning this repository with git, using the following instructions.
 
-**Build and run Docker image**
+```console
+git clone https://github.com/Microsoft/dotnet-framework-docker-samples
+```
 
-1. Build the Docker image
-   `docker build -t my-dotnet35-app .`
-2. Run the application in the container: 
-    `docker run my-dotnet35-app`
+You can also [download the repository as a zip](https://github.com/Microsoft/dotnet-framework-docker-samples/archive/master.zip).
 
+## Build and run the sample with Docker
+
+You can build and run the sample in Docker using the following commands. The instructions assume that you are in the root of the repository.
+
+```console
+cd dotnetapp-3.5
+docker build -t dotnetapp-3.5 .
+docker run --rm dotnetapp-3.5 Hello .NET Framework from Docker
+```
+
+Note: The instructions above work on multiple versions of Windows. The .NET Framework base images use [multi-arch tags](https://github.com/dotnet/announcements/issues/14), which are used to abstract away [different versions of Windows base images](https://docs.microsoft.com/virtualization/windowscontainers/deploy-containers/version-compatibility). This means that you will get different results depending on the version of Windows that you are using.
+
+## Build and run the sample locally with MSBuild
+
+You can build and run the sample locally with MSBuild using the following instructions. The instructions assume that you have [Visual Studio 2017](https://www.visualstudio.com/) installed, that you are using the `Developer Command Prompt for VS 2017`, and  that you are in the root of the repository.
+
+```console
+cd dotnetapp
+msbuild.exe /t:restore
+msbuild.exe /t:Build /p:Configuration=Release /p:OutputPath=out
+```
+
+You can run the application using the following command.
+
+```console
+out\dotnetapp.exe
+```
+
+## Docker Images used in this sample
+
+The following Docker images are used in this sample
+
+* [microsoft/dotnet-framework-build:3.5](https://hub.docker.com/r/microsoft/dotnet-framework-build)
+* [microsoft/dotnet-framework:3.5](https://hub.docker.com/r/microsoft/dotnet-framework)
+
+## Related Resources
+
+* [ASP.NET Docker sample](../aspnetapp/README.md)
+* [.NET Framework Docker samples](../README.md)
+* [.NET Core Docker samples](https://github.com/dotnet/dotnet-docker-samples)
