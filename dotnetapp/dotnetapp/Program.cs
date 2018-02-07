@@ -5,24 +5,28 @@ class Program
 {
     static void Main(string[] args)
     {
-        string message = "Dotnet-bot: Welcome to using .NET Framework!";
+        string message = "Hello Docker, from .NET Framework!";
 
         if (args.Length > 0)
         {
             message = string.Join(" ", args);
         }
 
-        WriteLine(GetBot(message));
+        PrintBotMessage(message);
         WriteLine();
-        WriteLine("**Environment**");
-        WriteLine($".NET Framework 4.7.1");
-        WriteLine($"{Environment.OSVersion}");
     }
 
-    public static string GetBot(string message)
+    public static void PrintEnvironmentInfo()
     {
-        string bot = $"\n        {message}";
-        bot += @"
+        WriteLine("**Environment**");
+        WriteLine(".NET Framework 4.7.1");
+        WriteLine($"{Environment.OSVersion}");
+        WriteLine();
+    }
+
+    public static void PrintBotMessage(string message)
+    {
+        var bot = @"
     __________________
                       \
                        \
@@ -62,6 +66,8 @@ class Program
         .....
 
 ";
-        return bot;
+
+        Console.WriteLine = $"\n    {message}";
+
     }
 }
