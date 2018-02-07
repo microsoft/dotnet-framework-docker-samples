@@ -2,14 +2,15 @@
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
-    <TargetFramework>net462</TargetFramework>
+    <TargetFramework>net471</TargetFramework>
   </PropertyGroup>
 
   <!-- See dotnet/cli #6837 -->
   <ItemGroup>
-    <Content Include="dotnetapp-4.6.2.exe.config">
+    <Content Include="dotnetapp.exe.config">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
+
 
 </Project>
